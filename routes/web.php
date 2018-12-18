@@ -15,8 +15,4 @@ Route::get('/', function () {
     return redirect()->action('IndexController@index');;
 });
 
-Route::get('/', function ($id) {
-    return $id;
-});
-
 Route::get('/index', 'IndexController@index');
