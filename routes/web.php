@@ -12,9 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome1');
 });
 
-Route::get('/a', function () {
-    return view('welcome');
-});
+Route::post('/callback', 'CallbackController@index');
