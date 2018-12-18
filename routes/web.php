@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return redirect()->action('IndexController@index');;
+    return view('welcome');
 });
 
-Route::get('/index', 'IndexController@index');
+Route::get('/a', function () {
+    return view('welcome');
+});
